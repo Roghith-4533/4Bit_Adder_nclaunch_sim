@@ -57,7 +57,8 @@ Note : File name should be with HDL Extension
 
 •	fa_4bit_test.v → Test bench 
 ##Verilog code
-```module full_adder(A,B,CIN,S,COUT);
+```
+module full_adder(A,B,CIN,S,COUT);
 input A,B,CIN;
 output S,COUT;
 assign S=A^B^CIN;
@@ -75,7 +76,8 @@ endmodule
 ```
 
 ##TestBench
-```module test_4bit;
+```
+module test_4bit;
 reg [3:0] A;
 reg [3:0] B; reg C0; wire [3:0] S; wire C4;
 fulladd_4bit dut (A,B,C0,S,C4);
